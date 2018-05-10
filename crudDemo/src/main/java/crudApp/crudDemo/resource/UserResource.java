@@ -53,6 +53,7 @@ public class UserResource {
 	 
 	// Single.just(name).flatMap(u->userService.getByUserName(u))
 		*/
+		System.out.print("testing");
 		return  null;
 	}
 	
