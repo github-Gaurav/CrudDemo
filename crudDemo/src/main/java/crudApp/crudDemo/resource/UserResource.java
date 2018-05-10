@@ -29,7 +29,6 @@ public class UserResource {
 		
 	System.out.println("inside addUser controller package");
 	 return	Single.just(userDTO)
-			// .doOnSuccess(userDTO.getAddress())
 			 .map(UserMapper::map)
 		.flatMap(u->userService.addUser(u))
 		.map(UserMapper::map)

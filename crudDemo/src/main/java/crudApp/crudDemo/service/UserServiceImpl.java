@@ -19,12 +19,8 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public Single<User> getById(String id){
 
-		
-		/*return Single.just(id).map(u->userDAO.getUserById(u))
-				.flatMap(null);*/
-		
 		return Single.just(id).map(u->userDAO.getUserById(u)).flatMap(u-> Single.just(u));
-		//return userDAO.getUserById(id);
+		
 	}
 
 	@Override
