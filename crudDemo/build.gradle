@@ -3,7 +3,14 @@ buildscript {
 		springBootVersion = '2.0.1.RELEASE'
 	}
 	
-	
+	task toJar (type: Jar) {
+    from configurations.compile.collect { zipTree it }
+    manifest {
+        attributes 'Implementation-Title': 'myApp',
+                'Implementation-Version': 1.0,
+                'Main-Class': CrudDemoApplication
+    }
+}
 	
 	repositories {
 		mavenCentral()
