@@ -3,7 +3,9 @@ buildscript {
 		springBootVersion = '2.0.1.RELEASE'
 	}
 	
-	
+	plugins {
+				id 'org.springframework.boot' version '2.0.1.RELEASE'
+			}
 	
 	repositories {
 	
@@ -20,7 +22,6 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
-apply plugin: 'org.springframework.boot.gradle.plugin.SpringBootPlugin'
 apply plugin: 'maven'
 apply plugin: 'findbugs'
 
