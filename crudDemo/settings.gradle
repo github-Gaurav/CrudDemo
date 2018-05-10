@@ -1,7 +1,1 @@
 rootProject.name = 'crudDemo'
-pluginManagement {
-    repositories {
-        mavencentral()
-    }
-}
-
