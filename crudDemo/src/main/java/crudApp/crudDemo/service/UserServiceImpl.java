@@ -40,6 +40,7 @@ public class UserServiceImpl implements UserService{
 	public Single<User>addUser(User user){
 
 		System.out.println("Inside Add User Service");
+		System.out.println("Inside Add User Service");
 		return Single.just(userDAO.addUserData(user));
 
 	}
