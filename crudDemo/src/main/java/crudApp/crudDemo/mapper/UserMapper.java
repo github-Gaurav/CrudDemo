@@ -8,6 +8,10 @@ public class UserMapper {
 
 	public static UserDTO map(User user){
 
+		System.out.println("Inside Mapper UserDTO1");
+		System.out.println("Inside Mapper UserDTO");
+		System.out.println("Inside Mapper UserDTO");
+		System.out.println("Inside Mapper UserDTO");
 		System.out.println("Inside Mapper UserDTO");
 		return (user == null ? null : new UserDTO(user.getAddress(),user.getAge(), user.getDob(), user.getEmail(), user.getMobNo(), user.getName()));
 	}
