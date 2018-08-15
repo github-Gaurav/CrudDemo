@@ -13,6 +13,9 @@ public class User {
 	private String address;
 	private String dob;
 	private String email;
+
+
+
 	
 	public User(String mobNo, String name, String age, String address, String dob, String email) {
 		super();

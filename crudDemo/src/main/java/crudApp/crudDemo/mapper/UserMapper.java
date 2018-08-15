@@ -9,7 +9,6 @@ public class UserMapper {
 	public static UserDTO map(User user){
 
 		System.out.println("Inside Mapper UserDTO");
-		System.out.println("Inside Mapper DTO");
 		return (user == null ? null : new UserDTO(user.getAddress(),user.getAge(), user.getDob(), user.getEmail(), user.getMobNo(), user.getName()));
 	}
 
